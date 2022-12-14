@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="378dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="111dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="9dp"
+        android:padding="20dp"
+        android:text="              Select Mode"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/master"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.977" />
+
+    <Button
+        android:id="@+id/master"
+        android:layout_width="190dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="12dp"
+        android:height="50dp"
+        android:backgroundTint="#DA670E4A"
+        android:onClick="onClickModeMaster"
+        android:text="Master"
+        android:textColorHighlight="#FFFFFF"
+        android:textStyle="bold"
+        app:cornerRadius="30dp"
+        app:layout_constraintEnd_toStartOf="@+id/worker"
+        app:layout_constraintTop_toBottomOf="@+id/question" />
+
+    <Button
+        android:id="@+id/worker"
+        android:layout_width="190dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#DA670E4A"
+        android:onClick="onClickModeSlave"
+        android:text="Worker"
+        android:textColorLink="#FFFFFF"
+        android:textStyle="bold"
+        app:cornerRadius="30dp"
+        app:layout_constraintStart_toEndOf="@+id/master"
+        app:layout_constraintTop_toBottomOf="@+id/question" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
